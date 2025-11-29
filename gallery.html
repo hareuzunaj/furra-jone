@@ -41,12 +41,12 @@
             <div class="gallery-col"><img src="images/swqgaleria.jpg" alt="Sandwich i freskët"></div>
             <div class="gallery-col"><img src="images/Tortaaaa4.jpg" alt="Torta dekorative"></div>
         </div>
-         <div class="row">
+        <div class="row">
             <div class="gallery-col"><img src="images/mufiqoko.jpg" alt="Muffin me cokollate"></div>
             <div class="gallery-col"><img src="images/mufivanill.jpg" alt="Muffin me vanilla"></div>
             <div class="gallery-col"><img src="images/mufifrutA.jpg" alt="Muffin me fruta mali"></div>
         </div>
-         <div class="row">
+        <div class="row">
             <div class="gallery-col"><img src="images/donut-strawberry.jpg" alt="Donut me dredhze"></div>
             <div class="gallery-col"><img src="images/Lemon-.webp" alt="Donut me limon"></div>
             <div class="gallery-col"><img src="images/donutqoko.jpeg" alt="Donut me coko"></div>
@@ -64,6 +64,7 @@
 
     <a href="#" id="backToTop" class="back-to-top">&#8679;</a>
 
+    <!-- Script per menun dhe back to top -->
     <script>
         var navLinks = document.getElementById("navLinks");
         function showMenu() { navLinks.style.right = "0"; }
@@ -79,5 +80,36 @@
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
     </script>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: false,
+            distance: "50px",
+            duration: 1000,
+            easing: "ease-in-out"
+        });
+
+        // Header
+        ScrollReveal().reveal('.text-box h1', { origin: "top", delay: 100 });
+        ScrollReveal().reveal('.text-box p', { origin: "bottom", delay: 300 });
+
+        // Nav links
+        ScrollReveal().reveal('.nav-links ul li', { origin: 'right', interval: 100 });
+
+        // Gallery
+        ScrollReveal().reveal('.gallery-col', {
+            origin: 'bottom',
+            interval: 150,
+            opacity: 0,
+            scale: 0.9
+        });
+
+        // Footer
+        ScrollReveal().reveal('.footer p', { origin: 'left', delay: 100 });
+        ScrollReveal().reveal('.icons i', { origin: 'right', interval: 100 });
+    </script>
+
 </body>
 </html>
