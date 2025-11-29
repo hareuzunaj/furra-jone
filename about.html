@@ -1,93 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furra Jone - Rreth Nesh</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Furra Jone</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-   <section class="sub-header">
+    <!-- Header Section -->
+    <section class="sub-header">
       <nav>
-        <a href="index.html"><img src="images/upt.furra.PNG"></a>
+        <a href="index.html"><img src="images/upt.furra.PNG" alt="Furra Jone"></a>
         <div class="nav-links" id="navLinks">
-            <i id="close"  class="fa fa-times" onclick="hideMenu()"></i>
+            <i id="close" class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="products.html">PRODUCTS</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
         <i id="open" class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
       <h1>Rreth nesh</h1>   
-   </section> 
-    <!----ABout Us COntent-->
+    </section> 
+
+    <!-- About Section -->
     <section class="about-us">
         <div class="row">
             <div class="about-col">
                 <h1>Furra më e mirë, shija që të mahnit!</h1>
-                <p>Mirësevini te Furra Jonë, furrën tuaj të besuar në zemër të Prizrenit që nga viti 2013. 
-                    Me mbi një dekadë përvojë, ne krenohemi me përgatitjen e një shumëllojshmërie produktesh të freskëta dhe të shijshme çdo ditë. Nga bureku ynë i famshëm me mbushje të pasura e të shijshme, te një zgjedhje e larmishme e ëmbëlsirave, lesnatos, dhe kroasanëve të butë e të shkrifët, ne sjellim një ekuilibër të përsosur mes traditës dhe shijes në çdo kafshatë.
-                     Gjithashtu, ofrojmë një gamë të gjerë bukësh të freskëta, për të shoqëruar çdo vakt me cilësinë më të lartë. Te Furra Jonë, besojmë në përdorimin e përbërësve më të mirë dhe teknikave tradicionale për të sjellë ngrohtësinë dhe shijen e vërtetë të artizanatit të bukës. Na vizitoni dhe shijoni traditën!</p>
-                    <a href="" class="viz-btn red-btn "  >SHIKO TANI</a>
+                <p>
+                    Mirësevini te Furra Jonë, furrën tuaj të besuar në zemër të Prizrenit që nga viti 2013. 
+                    Me mbi një dekadë përvojë, ne krenohemi me përgatitjen e një shumëllojshmërie produktesh të freskëta dhe të shijshme çdo ditë. 
+                    Nga bureku ynë i famshëm me mbushje të pasura e të shijshme, te një zgjedhje e larmishme e ëmbëlsirave, lesnatos, dhe kroasanëve të butë e të shkrifët, ne sjellim një ekuilibër të përsosur mes traditës dhe shijes në çdo kafshatë.
+                    Gjithashtu, ofrojmë një gamë të gjerë bukësh të freskëta, për të shoqëruar çdo vakt me cilësinë më të lartë. 
+                    Te Furra Jonë, besojmë në përdorimin e përbërësve më të mirë dhe teknikave tradicionale për të sjellë ngrohtësinë dhe shijen e vërtetë të artizanatit të bukës. 
+                    Na vizitoni dhe shijoni traditën!
+                </p>
+                <a href="#" class="viz-btn red-btn">SHIKO TANI</a>
             </div>
             <div class="about-col">
-                <img src="images/abt4.jpg" >
+                <img src="images/abt4.jpg" loading="lazy" alt="Furra Jone">
             </div>
         </div>
     </section>
-       <!----Footer-->
-       <section class="footer">
+
+    <!-- Footer -->
+    <section class="footer">
         <h4>Rreth nesh</h4>
         <p>Nëse jeni të interesuar të shihni disa nga produktet që ne ofrojmë dhe të jeni të përditësuar me ofertat ditore, mund të kontrolloni rrjetet tona sociale më poshtë</p>
-            <div class="icons">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>
-                
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="far fa-heart"></i> by Hare Uzunaj</p>
+        <a href="#" id="backToTop" class="back-to-top">&#8679;</a>
+    </section>
 
-            </div>
-            <p>Made with <i class="far fa-heart"></i> by Hare Uzunaj</p>
-        <!-- Back to Top Button -->
-          <a href="#" id="backToTop" class="back-to-top" title="Back to top">&#8679;</a>
-        </section>
-    <!----JS per menu---> 
+    <!-- JS for menu and back-to-top -->
     <script>
         var navLinks = document.getElementById("navLinks");
-        function showMenu(){
-            navLinks.style.right="0";
-        }
-        function hideMenu(){
-            navLinks.style.right="-200px";
-        }
-        // JS per Back to Top Button
-    const backToTopButton = document.getElementById("backToTop");
+        function showMenu(){ navLinks.style.right="0"; }
+        function hideMenu(){ navLinks.style.right="-200px"; }
 
-    window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 300) {
-            backToTopButton.style.display = "block";
-        } else {
-            backToTopButton.style.display = "none";
-        }
-    });
-
-    backToTopButton.addEventListener("click", function(e) {
-        e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+        const backToTopButton = document.getElementById("backToTop");
+        window.addEventListener("scroll", () => {
+            if(window.pageYOffset > 300){ backToTopButton.style.display="block"; }
+            else{ backToTopButton.style.display="none"; }
         });
-    });
-</script>
-   </script>
+        backToTopButton.addEventListener("click", function(e){
+            e.preventDefault();
+            window.scrollTo({ top:0, behavior:"smooth" });
+        });
+    </script>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: false,
+            distance: "50px",
+            duration: 1000,
+            easing: "ease-in-out"
+        });
+        ScrollReveal().reveal('.about-col h1', { origin: 'left' });
+        ScrollReveal().reveal('.about-col p', { origin: 'bottom', delay: 200 });
+        ScrollReveal().reveal('.about-col img', { origin: 'right', delay: 300 });
+        ScrollReveal().reveal('.viz-btn', { origin: 'bottom', delay: 400 });
+    </script>
 </body>
 </html>
