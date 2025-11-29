@@ -166,6 +166,44 @@
             navLinks.style.right="-200px";
         }
    </script>
-<a href="products.html" class="floating-order">Porosit tani!!</a>
+<a href="contact.html" class="floating-order">Porosit tani!!</a>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal({ 
+        reset: false, 
+        distance: "50px",
+        duration: 1000,
+        easing: "ease-in-out"
+    });
+
+    // HERO TEXT
+    ScrollReveal().reveal('.text-box h1', { origin: 'top' });
+    ScrollReveal().reveal('.text-box p', { origin: 'bottom', delay: 200 });
+    ScrollReveal().reveal('.viz-btn', { origin: 'bottom', delay: 300 });
+
+    // PRODUCTS
+    ScrollReveal().reveal('.products h1', { origin: 'left' });
+    ScrollReveal().reveal('.products p', { origin: 'right' });
+    ScrollReveal().reveal('.products-col', { 
+        interval: 150,
+        origin: 'bottom'
+    });
+
+    // CLIENT REVIEWS
+    ScrollReveal().reveal('.mendimet h1', { origin: 'left' });
+    ScrollReveal().reveal('.mendimet p', { origin: 'right' });
+    ScrollReveal().reveal('.mendimet-col', { 
+        interval: 200,
+        origin: 'bottom'
+    });
+
+    // CALL TO ACTION
+    ScrollReveal().reveal('.thr h1', { origin: 'top' });
+    ScrollReveal().reveal('.thr .viz-btn', { origin: 'bottom' });
+
+    // FOOTER
+    ScrollReveal().reveal('.footer p', { origin: 'left' });
+    ScrollReveal().reveal('.icons', { origin: 'right', delay: 150 });
+</script>
 </body>
 </html>
