@@ -355,7 +355,7 @@ p {
    color:white;
 }
 .sub-header h1{
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .about-us{
     width:80%;
@@ -492,33 +492,41 @@ p {
     margin: auto;
     padding: 50px 0;
 }
+
 .gallery .row {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px; /* hapësira mes imazheve */
 }
+
+/* Desktop: 3 foto per rresht */
 .gallery-col {
-    flex-basis: 32%;
+    flex: 0 0 calc(33.333% - 13.33px); /* 3 foto me gap 20px */
     overflow: hidden;
     border-radius: 10px;
     cursor: pointer;
     position: relative;
 }
+
 .gallery-col img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
+
 .gallery-col img:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
-@media(max-width:700px){
+
+/* Mobile: 1 foto per rresht */
+@media(max-width: 700px){
     .gallery-col {
-        flex-basis: 100%;
+        flex: 0 0 100%;
     }
 }
+
 .blog-col {
     background: #fff;
     border-radius: 15px;
@@ -630,5 +638,4 @@ p {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
-
 
