@@ -11,111 +11,135 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+   <!-- HEADER -->
    <section class="sub-header">
       <nav>
-        <a href="index.html"><img src="images/upt.furra.PNG"></a>
+        <a href="index.html"><img src="images/upt.furra.PNG" alt="Logo Furra Jone"></a>
         <div class="nav-links" id="navLinks">
-            <i id="close"  class="fa fa-times" onclick="hideMenu()"></i>
+            <i id="close" class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="products.html">PRODUCTS</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+               <li><a href="about.html">ABOUT</a></li>
+               <li><a href="products.html">PRODUCTS</a></li>
+               <li><a href="gallery.html">GALLERY</a></li>
+               <li><a href="blog.html">BLOG</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
         <i id="open" class="fa fa-bars" onclick="showMenu()"></i>
+        
       </nav>
-      <h1>Na kontaktoni</h1>   
+      <h1>Na kontaktoni / Bëni porosinë</h1>   
    </section> 
-    <!----Kontakti-->
-    <section class="location">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.5281840150606!2d20.724664174732325!3d42.20315467120787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13539569cd20203d%3A0x59abc0605cdff869!2zRnVycmEgIkpvbsOrIg!5e0!3m2!1ssq!2s!4v1742333269116!5m2!1ssq!2s" width="600" height="450" style="border:0;" allowfullscreen="" 
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <section class="contact-us">
+
+   <!-- LOCATION -->
+   <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.5281840150606!2d20.724664174732325!3d42.20315467120787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13539569cd20203d%3A0x59abc0605cdff869!2zRnVycmEgIkpvbsOrIg!5e0!3m2!1ssq!2s!4v1742333269116!5m2!1ssq!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+
+   <!-- CONTACT INFO + ORDER FORM -->
+   <section class="contact-us">
         <div class="row">
+            <!-- INFO -->
             <div class="contact-col">
                 <div>
                     <i class="fas fa-home"></i>
                     <span>
                         <h5>Xhevat Berisha, Prizren 20000</h5>
-                        <p>Mrapa Spitalit Të Përgjithshëm të Prizrenit,Tusuz.</p>
+                        <p>Mrapa Spitalit Të Përgjithshëm të Prizrenit, Tusuz.</p>
                     </span>
                 </div>
                 <div>
                     <i class="fas fa-phone"></i>
                     <span>
-                        <h5>+38649890264</h5>
-                        <p>Nga e hëna në të dielë, nga ora 06:00 deri në 23:00</p>
+                        <h5>+38349716593</h5>
+                        <p>Nga e hëna në të dielë, 06:00 - 23:00</p>
                     </span>
                 </div>
                 <div>
                     <i class="fas fa-envelope"></i>
                     <span>
                         <h5>furrajonë@gmail.com</h5>
-                        <p>Na kontaktoni edhe përmes emailit për çdo shqetësim apo kërkesë.</p>
+                        <p>Na kontaktoni edhe përmes emailit për çdo kërkesë.</p>
                     </span>
                 </div>
             </div>
+
+            <!-- FORM PËR POROSI WHATSAPP -->
             <div class="contact-col">
-                <form action="">
-                    <input type="text" placeholder="Shkruaj emrin dhe mbiemrin tënd" required>
-                    <input type="email" placeholder="Shkruaj adresën e emailit tënd" required>
-                    <input type="text" placeholder="Adresa e banimit" required>
-                    <textarea rows="8" placeholder="Porosia juaj" required></textarea>
-                    <button type="submit" class="viz-btn red-btn" >Bëni porosinë</button>
+                <form onsubmit="orderWhatsApp(event)">
+                      <label>Info:</label>
+                    <input id="name" type="text" placeholder="Emri juaj" required>
+
+                    <label>Produkt:</label>
+                        <br>
+                    <select id="product" required>
+                        <br> <br><br>
+                        <option value="">Zgjidh produktin</option>
+                        <option value="Burek">Burek</option>
+                        <option value="Croissant">Croissant</option>
+                        <option value="Sandwich">Sandwich</option>
+                        <option value="Donut">Donut</option>
+                        <option value="Torte">Torte</option>
+                    </select>
+                    <br>
+                      <label>Sasia:</label>
+                    <input id="qty" type="number" placeholder="Cakto sasine e deshiruar" min="1" required>
+                      <label>Adresa:</label>
+                    <textarea id="note" rows="5" placeholder="Shkruaj adresen e sakte tuaj" required></textarea>
+                    
+                    <button type="submit" class="viz-btn red-btn">Porosit në WhatsApp</button>
                 </form>
             </div>
         </div>
-    </section>
+   </section>
 
-       <!----Footer-->
-       <section class="footer">
+   <!-- FOOTER -->
+   <section class="footer">
         <h4>Na kontaktoni</h4>
-        <p>Nëse jeni të interesuar të shihni disa nga produktet që ne ofrojmë dhe të jeni të përditësuar me ofertat ditore, mund të kontrolloni rrjetet tona sociale më poshtë</p>
-            <div class="icons">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>
-                
+        <p>Kontrolloni rrjetet tona sociale për oferta ditore.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="far fa-heart"></i> by Hare Uzunaj</p>
+        <a href="#" id="backToTop" class="back-to-top">&#8679;</a>
+   </section>
 
-            </div>
-            <p>Made with <i class="far fa-heart"></i> by Hare Uzunaj</p>
-    <!-- Back to Top Button -->
-<a href="#" id="backToTop" class="back-to-top" title="Back to top">&#8679;</a>
-
-        </section>
-    <!----JS per menu---> 
-    <script>
+   <!-- JS -->
+   <script>
+        // Menu toggle
         var navLinks = document.getElementById("navLinks");
-        function showMenu(){
-            navLinks.style.right="0";
-        }
-        function hideMenu(){
-            navLinks.style.right="-200px";
-        }
-        // JS per Back to Top Button
-    const backToTopButton = document.getElementById("backToTop");
+        function showMenu(){ navLinks.style.right="0"; }
+        function hideMenu(){ navLinks.style.right="-200px"; }
 
-    window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 300) {
-            backToTopButton.style.display = "block";
-        } else {
-            backToTopButton.style.display = "none";
-        }
-    });
-
-    backToTopButton.addEventListener("click", function(e) {
-        e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+        // Back to top button
+        const backToTopButton = document.getElementById("backToTop");
+        window.addEventListener("scroll", () => {
+            backToTopButton.style.display = window.pageYOffset > 300 ? "block" : "none";
         });
-    });
-</script>
+        backToTopButton.addEventListener("click", function(e){
+            e.preventDefault();
+            window.scrollTo({ top:0, behavior:"smooth" });
+        });
+
+        // WhatsApp order
+     function orderWhatsApp(e){
+    e.preventDefault();
+    
+    let name = encodeURIComponent(document.getElementById("name").value);
+    let product = encodeURIComponent(document.getElementById("product").value);
+    let qty = encodeURIComponent(document.getElementById("qty").value);
+    let note = encodeURIComponent(document.getElementById("note").value);
+
+    let message = `📦 Porosi nga ${name}%0AProdukt: ${product}%0ASasi: ${qty}%0A📝 Shënime/Adresë: ${note}`;
+    let phone = "38349716593"; // numri në formatin ndërkombëtar pa +
+    
+    window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
+}
+
    </script>
 </body>
 </html>
