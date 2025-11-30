@@ -91,9 +91,10 @@ nav img{
     background: #be581d;
     transition: 1s;
 }
-nav.fa{
-    display: hidden;
+nav .fa{
+    display: none;
 }
+
 #close{
     display:none;
 }
@@ -118,14 +119,14 @@ nav.fa{
         transition: 1s;
         z-index:2;
     }
-    nav.fa{
-        display: block;
-        color:#fff;
-        margin:10px;
-        font-size:22px;
-        cursor:pointer;
-
+    nav .fa{
+    display: block;
+    color:#fff;
+    margin:10px;
+    font-size:22px;
+    cursor:pointer;
     }
+
     .nav-links ul{
         padding:30px;
     }
@@ -496,7 +497,7 @@ p {
 .gallery .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* hapësira mes imazheve */
+    gap: 20px; /* hapsira mes imazheve */
 }
 
 /* Desktop: 3 foto per rresht */
