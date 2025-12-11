@@ -419,6 +419,7 @@ p {
     display: block;
 }
 /*Kontakti*/
+
 .location{
     width:80%;
     margin:auto;
@@ -580,6 +581,8 @@ p {
     top: 20px;
 }
 
+
+
 /* HERO SLIDESHOW */
 .hero-slideshow {
     position: relative;
@@ -594,7 +597,7 @@ p {
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 3s ease-in-out;
 }
 .hero-slideshow .slide.active {
     opacity: 1;
@@ -625,12 +628,12 @@ p {
     position: fixed;
     bottom:20px;
     left: 30px;
-    background: #be581d;
+    background: #e46708;
     color: #fff;
     padding: 15px 25px;
     border-radius: 50px;
     font-weight: 600;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(226, 95, 95, 0.2);
     cursor: pointer;
     z-index: 1000;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -639,4 +642,10 @@ p {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
+#hero-text {
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+
 
