@@ -7,8 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <title>Furra Jone</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+   
 </head>
 <body>
 <section class="header">
@@ -104,6 +106,7 @@
             
         </div>
     </section>
+    
     <!----Thirrjet-->
     <section class="thr">
         <h1>Porosit ushqimet tona të ndryshme online</h1>
@@ -205,5 +208,35 @@
     ScrollReveal().reveal('.footer p', { origin: 'left' });
     ScrollReveal().reveal('.icons', { origin: 'right', delay: 150 });
 </script>
+<script>
+const heroTexts = [
+    "Furra më e mirë në qytet — shija që ju bashkon!",
+    "Bukë e freskët çdo ditë, aroma që ju magjeps!",
+    "Shije që të bën të kthehesh gjithmonë!",
+    "Produktet tona sjellin cilësi, freski dhe dashuri!"
+    
+
+    
+];
+
+let heroIndex = 0;
+const heroElement = document.getElementById("hero-text");
+
+function changeHeroText() {
+  
+    heroElement.style.opacity = 0;
+
+  
+    setTimeout(() => {
+        heroIndex = (heroIndex + 1) % heroTexts.length;
+        heroElement.textContent = heroTexts[heroIndex];
+        heroElement.style.opacity = 1;
+    }, 1000); 
+}
+
+setInterval(changeHeroText, 2000);
+</script>
+
+
 </body>
 </html>
